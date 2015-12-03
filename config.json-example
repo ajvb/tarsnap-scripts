@@ -1,0 +1,8 @@
+{
+    "cachedir": "/home/myusername/.mytarsnapcache/",
+    "keyfile": "/home/myusername/tarsnap.key",
+    "dir_list": [
+        "/home/example/path/",
+        "/home/another/example/path/"
+    ]
+}
