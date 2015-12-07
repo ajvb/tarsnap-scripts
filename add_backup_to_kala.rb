@@ -8,7 +8,7 @@ API_URL = URI('http://127.0.0.1:8000/api/v1/job/')
 def post_to_kala(data)
     req = Net::HTTP::Post.new(API_URL)
     req.body = data.to_json
-    res = Net::HTTP.start(uri.host, uri.port) do |http|
+    res = Net::HTTP.start(API_URL.host, API_URL.port) do |http|
       http.request(req)
     end
 
