@@ -7,7 +7,7 @@ if __FILE__ == $0
 
     config_hash['dir_list'].each do |target|
         # Extract "target_name" from target.
-        # "/home/ajvb/.myfile/ -> "myfile"
+        # "/home/ajvb/.myfile/" -> "myfile"
         target_name = target.split(File::SEPARATOR)[-1].gsub(/\./, "")
 
         # Example: "backup-bashrc"
